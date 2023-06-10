@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body 
+{
+background-image: url('https://static.vecteezy.com/system/resources/previews/007/410/558/non_2x/minimalist-pastel-color-blob-aesthetic-background-wallpaper-template-poster-free-vector.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height:100vh;
+}
+body {
+  margin: 0;
+}
+.wrap1
+{
+  display:flex;
+}
+li,p{
+margin :5px;
+list-style: none;
+}
+img{
+width:150px;
+height:150px;
+border:1px solid #000;
+object-fit: cover;
+}
+.container1,.container2 {
+  align-items: center;
+}
+.container1
+{
+  background-color: #eebbcc;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  height: 78vh ;
+}
+.container2
+{
+  width:70vw;
+  height:80vh ;
+  border:1px solid #000;
+  background-color: #fff9f9;
+}
+#c2
+{
+  float :left;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid black;
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: .5;
+}
+#reset
+{
+  background-color: #c0a9d3;
+  width:5rem;
+}
+.reset-container
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  .wrap1{
+    display: flex;
+    flex-direction: column;
+  }
+  .container1
+  {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: auto;
+  }
+  
+  .reset-container
+  {
+    width: 80vw;
+    height: 60vh;
+     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-device-width: 480px)
+and (max-device-width: 768px) {
+  .container1
+  {
+    margin: 0;
+    height: 120vh;
+  }
+  .container2
+  {
+    margin-left:2rem;
+    height: 115vh;
+  }
+
+}
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)  {
+  body
+  {
+    background-color: #f3d6d6;
+    background-image: none;
+  }
+  .wrap1
+  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .reset-container
+    {
+    
+       margin-top: 1rem;
+    }
+    .container1
+    {
+      width: 40vw;
+      height: 140vh;
+    }
+
+}
+
+
+  
